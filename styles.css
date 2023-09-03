@@ -1,10 +1,16 @@
 body {
+  font-family: sans-serif;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 16px;
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 
   .title-banner{
     display: flex;
@@ -19,11 +25,21 @@ body {
   
     .title{
       padding-left: 16px;
+      font-size: 24px;
     }
   }
 
   .links {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.content {
+  padding: 0 20%;
+  line-height: 1.5;
+  font-size: 18px;
+  @media only screen and (max-width: 767px) {
+    padding: 0 12%;
   }
 }
