@@ -1,0 +1,29 @@
+body {
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .title-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+  
+    .banner {
+      width: 80px;
+      height: auto;
+    }
+  
+    .title{
+      padding-left: 16px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
